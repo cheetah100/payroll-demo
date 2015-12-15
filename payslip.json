@@ -1,0 +1,146 @@
+{
+    "name": "payslip",
+    "groups": {                    
+        "employee": {
+            "index": 1,
+            "name": "Employee Details",        
+            "fields": {
+                "firstname": {
+                    "type": "STRING",
+                    "control": "INPUT",
+                    "editable": true,
+                    "index": 1,
+                    "label": "First Name",
+                    "length": 20,
+                    "name": "firstname",
+                    "options": null,
+                    "required": true,
+                    "validation": "SINGLE-WORD",
+                    "editnew": true
+                },
+                "lastname": {
+                    "type": "STRING",
+                    "control": "INPUT",
+                    "editable": true,
+                    "index": 2,
+                    "label": "Last Name",
+                    "length": 20,
+                    "name": "lastname",
+                    "options": null,
+                    "required": true,
+                    "validation": "SINGLE-WORD",
+                    "editnew": true
+                },
+                "email": {
+                    "type": "STRING",
+                    "control": "INPUT",
+                    "editable": true,
+                    "index": 3,
+                    "label": "Email Address",
+                    "length": 20,
+                    "name": "email",
+                    "options": null,
+                    "required": false,
+                    "validation": "EMAIL",
+                    "editnew": true
+                }
+            }
+        },    
+        "paydetail": {
+            "index": 2,
+            "name": "Pay Details",
+            "fields": {
+                "salary": {
+                    "type": "NUMBER",
+                    "control": "INPUT",
+                    "editable": true,
+                    "index": 1,
+                    "label": "Gross Annual Salary",
+                    "length": 20,
+                    "name": "salary",
+                    "options": null,
+                    "required": true,
+                    "editnew": true
+                },
+                "super_rate": {
+                    "type": "NUMBER",
+                    "control": "INPUT",
+                    "editable": true,
+                    "index": 2,
+                    "label": "Super Rate",
+                    "length": 20,
+                    "name": "super_rate",
+                    "options": null,
+                    "required": true,
+                    "editnew": true
+                },
+                "start_date": {
+                    "type": "DATE",
+                    "control": "DATESELECTOR",
+                    "editable": true,
+                    "index": 3,
+                    "label": "Start Date",
+                    "length": 50,
+                    "name": "disposal_date",
+                    "options": null,
+                    "required": true,
+                    "editnew": true
+                }                
+            }
+        },
+        "calculated": {
+            "index": 3,
+            "name": "Calculated",
+            "fields": {
+                "gross_income": {
+                    "type": "NUMBER",
+                    "control": "INPUT",
+                    "editable": false,
+                    "index": 1,
+                    "label": "Monthly Gross Income",
+                    "length": 20,
+                    "name": "gross_income",
+                    "options": null,
+                    "required": false,
+                    "editnew": false
+                },
+                "income_tax": {
+                    "type": "NUMBER",
+                    "control": "INPUT",
+                    "editable": false,
+                    "index": 2,
+                    "label": "Income Tax",
+                    "length": 20,
+                    "name": "income_tax",
+                    "options": null,
+                    "required": false,
+                    "editnew": false
+                },
+                "net_income": {
+                    "type": "NUMBER",
+                    "control": "INPUT",
+                    "editable": false,
+                    "index": 3,
+                    "label": "Net Income",
+                    "length": 20,
+                    "name": "net_income",
+                    "options": null,
+                    "required": false,
+                    "editnew": false
+                },
+                "super": {
+                    "type": "NUMBER",
+                    "control": "INPUT",
+                    "editable": false,
+                    "index": 4,
+                    "label": "Super",
+                    "length": 20,
+                    "name": "super",
+                    "options": null,
+                    "required": false,
+                    "editnew": false
+                }
+            }
+        }
+    }
+}

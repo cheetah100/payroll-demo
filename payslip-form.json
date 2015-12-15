@@ -1,0 +1,11 @@
+{
+    "id": "payslip-form",
+    "name": "Payslip Form",
+    "board": "payroll-demo",
+    "template": "payslip",
+    "phase": "new",
+    "formType": "CREATE",
+    "roles": {
+        "demo": "ADMIN"
+    }
+}
